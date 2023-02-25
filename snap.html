@@ -15,35 +15,124 @@
         <div class="snap-logo"> <img src="./images/logo.svg" alt=""> </div>
         <ul class="nav">
           <li>
-           Features <img  src="./images/icon-arrow-down.svg" alt="">
+            <a href="">
+              Features 
+            </a>
+            <img class="arrow-down" src="./images/icon-arrow-down.svg" alt="" id="feature-arrow"> 
+            <div id="featureContent" >
+              <ul>
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-todo.svg" alt=""> 
+                    Todo list
+                  </a>
+                </li>
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-calendar.svg" alt="">
+                    Calenders
+                  </a> 
+                </li>
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-reminders.svg" alt="">
+                    Reminders 
+                  </a> 
+                </li>
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-planning.svg" alt="">
+                    Planning 
+                  </a> 
+                </li>
+              </ul>
+            </div>
           </li>
+        
           <li>
-            Company <img  src="./images/icon-arrow-down.svg"alt="">
+            <a href="#">
+              Company 
+            </a>
+            <img class="arrow-down" src="./images/icon-arrow-down.svg"alt="" id="company-arrow">
+            <div id="companyContent" >
+              <ul>
+                <li> <a href="#">History</a> </li>
+                <li> <a href="#"> Our team</a></li>
+                <li> <a href="#">Blog</a> </li>
+              </ul>
+            </div>
           </li>
-          <li>
-           Careers <img  src="./images/icon-arrow-down.svg"alt="">
-          </li>
-          <li>
-            About <img  src="./images/icon-arrow-down.svg" alt="">
-          </li>
+  
+          <li> <a href="">  Careers </a></li>
+          <li> <a href="">  About </a></li>
         </ul>
-        <ul class="list">
-          <li class="login">
-            Login
-          </li>
-          <li>
-           <span class="span">Register</span> </a> 
-          </li>
+
+        <ul class="registration">
+          <li> <a href="#">Login</a> </li>
+          <li class="register"> <a href="#">Register</a> </li>
         </ul>
-        </ul>
-        <img class="menu" src="./images/icon-menu.svg" alt="" width="35px" height="20px">
+
+        <img src="./images/icon-menu.svg"  alt="" width="35px" height="20px" class="menu">
+        <div  class="side-nav">
+          <ul id="dropdown-content">
+            <div class="close-menu">
+              <img src="./images/icon-close-menu.svg" alt="">
+            </div>  
+            <li> 
+              <a href="#"> Features </a> 
+              <img src="./images/icon-arrow-down.svg" id="feature-sidebar" alt="">
+              <ul id="feature-sidebar-link">
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-todo.svg" alt=""> 
+                    Todo list
+                  </a>
+                </li>
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-calendar.svg" alt="">
+                    Calenders
+                  </a> 
+                </li>
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-reminders.svg" alt="">
+                    Reminders 
+                  </a> 
+                </li>
+                <li> 
+                  <a href="#">
+                    <img src="./images/icon-planning.svg" alt="">
+                    Planning 
+                  </a> 
+                </li>
+              </ul>
+            </li>
+            <li> 
+              <a href=""> Company </a> 
+              <img src="./images/icon-arrow-down.svg" alt="" id="company-sidebar">
+              <ul id="company-sidebar-link">
+                <li> <a href="#">History</a> </li>
+                <li> <a href="#"> Our team</a></li>
+                <li> <a href="#">Blog</a> </li>
+              </ul>
+            </li>
+            <li> <a href="#"> Careers</a></li>
+            <li><a href="#"> About </a> </li>
+            <div class="login-div">
+              <li>login</li>
+              <li class="spanRegister">Register</li>
+            </div>
+          </ul>
+        </div>
       </div>
     </nav>
+
 
     <header class="header">
       <div class="container-header">
         <img class="image" src="./images/image-hero-desktop.png" alt="" width="490" height="520">
-        <img src="./images/image-hero-mobile.png" alt=""   width="490" height="350" class="mobile" >
+        <img class="mobile"  src="./images/image-hero-mobile.png" alt=""   width="490" height="350" >
         <div>
           <h1>Make <span class="nowrap">  remote work</span></h1>
           <p>Get your team in sync, no matter your location. Streamline processes, 
@@ -54,6 +143,7 @@
       </div>
     </header>
     
+
     <section>
       <div class="container-section">
         <div>
@@ -70,5 +160,7 @@
         </div>
       </div>
     </section>
+
+    <script src="./Snap.js"></script>
   </body>
 </html>
