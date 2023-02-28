@@ -339,8 +339,10 @@ a{
 
   .mobile{
     flex-direction: column;
+    min-width: 250px ;
     width: 100%;
     height: auto;
+    align-items: center;
     
   }
   .paragraph p {
