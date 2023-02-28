@@ -59,7 +59,7 @@ a{
 .snap-logo{
   width: 120px;
   height: 30px;
-  /* padding-right: 180px;  */
+
 }
 
 .container{
@@ -268,7 +268,7 @@ a{
  
   .container{
     justify-content: space-between;
-    min-width: 400px;
+    min-width: 430px;
     margin: 0px 15px;
  }
   
