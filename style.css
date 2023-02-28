@@ -9,7 +9,7 @@
 body{
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
-  margin: 20px ;
+  margin: 20px;
 }
 
 ul{
@@ -17,7 +17,6 @@ ul{
  }
 
 li{
-  width:150px;
   cursor: pointer;
   list-style: none;
   color: hsl(0, 0%, 35%);
@@ -46,7 +45,7 @@ a{
   
 }
 
-.container, .nav, .snap-logo, .list, .header, .container-header, .container-section{
+.container, .nav, .snap-logo, .list, .container-header, .container-section{
   display: flex;
 }
 
@@ -57,18 +56,21 @@ a{
 /* NAV STYLES */
 
 .snap-logo{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
   width: 120px;
-  height: 30px;
-
 }
 
 .container{
   align-items: center;
+  justify-content: space-between;
 
 }
 
 .nav{
   justify-content: space-between;
+  width: 450px;
 }
 
 
@@ -82,22 +84,18 @@ a{
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 25px;
-  align-content:flex-end;
-  position: relative;
- left: 0px;
-  width: 350px;
+  width: 250px;
   text-align: center; 
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .register{
   color: #696969 ;
   border: 2px solid hsl(0, 0%, 41%);
-  width: 130px;
-  border-radius: 17px;
+  width: 150px;
+  border-radius: 12px;
   cursor: pointer;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 #featureContent{
@@ -139,26 +137,22 @@ a{
 
 
 .container-header{
-  margin: 60px 110px;
+  margin: 50px 110px;
   height:auto;
   flex-direction: row-reverse;
-  align-items: left; 
-  justify-content: space-between;
+  align-items: flex-end;
+  justify-content: center;
 
 
   } 
 
 .nowrap{
-  white-space: nowrap;
+ white-space: nowrap;
 }
 
 .image{
-  width: 100%;
- height: 495px;
-}
-
-.paragraph{
-  margin-top: 60px;
+  max-width: 500px;
+  height: 495px;
 }
 
 
@@ -181,13 +175,13 @@ a{
 
 /* SECTION STYLES */
 
-.container-section{
-  max-width: 500px; 
-  padding: 0;
-  margin-top: -80px; 
-  margin-left: 90px ;
-  justify-content: space-evenly;
-}
+ .container-section{
+  max-width: 430px; 
+  margin-top: 80px;
+  justify-content: space-between;
+  
+
+} 
 
 
 
@@ -264,21 +258,22 @@ a{
 
   .snap-logo{
     padding: 0px;
+    margin: 0px;
   }
  
   .container{
     justify-content: space-between;
-    min-width: 430px;
+    min-width: 381px;
     margin: 0px 15px;
  }
   
-  .menu, .mobile, .container-header{
-    display: flex;
-  }
+
   .nav, .registration, .image{
     display: none;
   }
-
+  .menu, .mobile, .container-header, .snap-logo{
+    display: flex;
+  }
 
 /* SIDE NAV STYLES MOBILE */
 
@@ -287,27 +282,27 @@ a{
   }
   .menu{
     position: relative;
-    right: auto;
   }
 
   .side-nav{
     display: none;
-    position: absolute;
+    position: fixed;
     top:0px;
-    left: 250px;
+    right: 0px;
     cursor: pointer;
-    max-width: 250px;
+    max-width: 2011px;
     height: 1024px;
     background-color: rgb(244, 244, 244);
     margin: 0px 0px 0px -14px;  
     border-radius: 5px;
-    padding: 30px 25px 0px 25px;
+    padding: 30px 7px 0px 25px;
     cursor: pointer;
     box-shadow:  1px 2px 20px 2px #888;
   }
   .close-menu{
     display: block;
     margin-bottom: 70px;
+    margin-right: 20px;
     text-align: right;
   }
   #dropdown-content a{
@@ -326,7 +321,7 @@ a{
   .spanRegister{
     border: 2px solid #8c8b8b;
     margin-top: 18px;
-    width: 195px;
+    width: 165px;
     padding: 9px 0px;
     text-align: center;
     border-radius: 14px;
@@ -337,8 +332,9 @@ a{
 
   .container-header{
     flex-direction: column;
+
     text-align: center;
-    margin:60px 0px;
+    margin:60px 20px;
    }
 
   .mobile{
@@ -348,19 +344,25 @@ a{
     
   }
   .paragraph p {
-    width: 450px;
+    font-size: 18px;
   }
-
+ .paragraph{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   text-align: center;
+ }
 
 /* SECTION STYLES MOBILE */
 
 
   .container-section{
     justify-content: space-between;
-    width: 300px;
+    width: 625px;
     margin: 0px;
     margin-top: -25px;
-    min-width: 475px;
+
     padding: 90px 10px;
   }
 }
