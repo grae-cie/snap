@@ -9,6 +9,7 @@
 body{
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
+  margin: 20px ;
 }
 
 ul{
@@ -55,21 +56,21 @@ a{
 
 /* NAV STYLES */
 
-.container{
-  margin-top: 30px;
-}
-
 .snap-logo{
   width: 120px;
   height: 30px;
-  padding-left: 30px;
-  padding-right: 180px; 
+  /* padding-right: 180px;  */
+}
+
+.container{
+  align-items: center;
+
 }
 
 .nav{
-  width: 100%;
-  text-align: center;
+  justify-content: space-between;
 }
+
 
 #feature-sidebar-link, #company-sidebar-link{
   display: none;
@@ -77,10 +78,14 @@ a{
 }
 
 .registration{
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 25px;
+  align-content:flex-end;
+  position: relative;
+ left: 0px;
   width: 350px;
   text-align: center; 
   justify-content: space-evenly;
@@ -131,21 +136,31 @@ a{
 
 /* HEDAER STYLES */
 
- .header{
-  max-width: 1100px;
-  margin: 50px auto;
-  }
+
 
 .container-header{
-  max-width: 2000px;
-  justify-content: space-between;
+  margin: 60px 110px;
+  height:auto;
   flex-direction: row-reverse;
-  align-items: center; 
+  align-items: left; 
+  justify-content: space-between;
+
+
   } 
 
 .nowrap{
   white-space: nowrap;
 }
+
+.image{
+  width: 100%;
+ height: 495px;
+}
+
+.paragraph{
+  margin-top: 60px;
+}
+
 
 .button{
   font-weight: 600;
@@ -167,20 +182,72 @@ a{
 /* SECTION STYLES */
 
 .container-section{
-  width: 600px;
-  padding: 0 20px;
+  max-width: 500px; 
+  padding: 0;
   margin-top: -80px; 
+  margin-left: 90px ;
   justify-content: space-evenly;
 }
 
 
 
-@media(max-width:500px){
+@media(min-width:599px) and (max-width:1100px){
+.container{
+  align-items: center;
+  
+}
+.nav{
+  min-width: 400px;
+}
+
+.snap-logo{
+  padding-right: 0px;
+}
+
+
+  .container-header{
+    margin-left: 20px;
+    justify-content: center;
+    overflow:visible;
+    position: relative;
+    left: 35px;
+    
+  }
+
+  .paragraph h1{
+    font-size: 45px;
+    padding-top: 50px;
+  }
+  .paragraph{
+    width: 450px;
+  }
+  .paragraph p{
+    font-size: 18px;
+  }
+
+  .image{
+    max-width: 390px;
+    width: 50%;
+    height: 500px;
+  }
+
+  .container-section{
+    justify-content: space-between;
+    width: 390px;
+     margin-left:0px;
+  }
+}
+
+
+
+@media  (max-width:500px){
 
 /* BASIC STYLES  */
 
   body{
     height: 1000px;
+    margin: 30px 5px;
+    padding: 0px;
 }
   h1{
     padding-top: 60px;
@@ -195,30 +262,44 @@ a{
     margin-left: 20px;
   }
 
-  .menu, .mobile, .container-header, .side-nav{
+  .snap-logo{
+    padding: 0px;
+  }
+ 
+  .container{
+    justify-content: space-between;
+    min-width: 400px;
+    margin: 0px 15px;
+ }
+  
+  .menu, .mobile, .container-header{
     display: flex;
   }
   .nav, .registration, .image{
     display: none;
   }
 
+
 /* SIDE NAV STYLES MOBILE */
 
-  #dropdown-content, .side-nav, .close-menu{
+  #dropdown-content, .close-menu{
     display: block;
   }
   .menu{
-    margin-left: 220px;
+    position: relative;
+    right: auto;
   }
 
   .side-nav{
+    display: none;
     position: absolute;
-    left: 233px;
+    top:0px;
+    left: 250px;
     cursor: pointer;
-    width: 250px;
-    height: 1026px;
+    max-width: 250px;
+    height: 1024px;
     background-color: rgb(244, 244, 244);
-    margin: -29px 0px 0px 0px;  
+    margin: 0px 0px 0px -14px;  
     border-radius: 5px;
     padding: 30px 25px 0px 25px;
     cursor: pointer;
@@ -257,17 +338,29 @@ a{
   .container-header{
     flex-direction: column;
     text-align: center;
+    margin:60px 0px;
    }
 
   .mobile{
     flex-direction: column;
+    width: 100%;
+    height: auto;
+    
   }
+  .paragraph p {
+    width: 450px;
+  }
+
 
 /* SECTION STYLES MOBILE */
 
 
   .container-section{
-    width: 500px;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0px;
+    margin-top: -25px;
+    min-width: 475px;
     padding: 90px 10px;
   }
 }
