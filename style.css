@@ -14,7 +14,7 @@ body{
 
 ul{
   list-style: none;
- }
+}
 
 li{
   cursor: pointer;
@@ -25,21 +25,21 @@ li{
 h1{
   font-size: 70px;
   width: 500px;
- }
+}
 
- p{
+p{
   margin: 30px 0px;
   width: 450px;
   line-height: 24px;
   color: hsl(0, 0%, 43%);
- }
+}
 
 a{
   color: hsl(0, 0%, 35%);
   text-decoration: none;
 }
 
- li:hover{
+li:hover{
   color:black;
   font-weight: 500;
   
@@ -58,14 +58,14 @@ a{
 .snap-logo{
   display: flex;
   align-items: center;
-  margin-top: 10px;
   width: 120px;
 }
 
 .container{
+  width: 100%;
   align-items: center;
   justify-content: space-between;
-
+  margin-bottom: 60px;
 }
 
 .nav{
@@ -111,7 +111,7 @@ a{
   cursor: pointer;
 }
 
- #companyContent{
+#companyContent{
   display: none; 
   text-align: left;
   background-color: white;
@@ -134,23 +134,17 @@ a{
 
 /* HEDAER STYLES */
 
-
-
 .container-header{
-  margin: 50px 110px;
-  height:auto;
   flex-direction: row-reverse;
-  align-items: flex-end;
   justify-content: center;
-
-
-  } 
+} 
 
 .nowrap{
  white-space: nowrap;
 }
 
 .image{
+  width: 100%;
   max-width: 500px;
   height: 495px;
 }
@@ -175,66 +169,62 @@ a{
 
 /* SECTION STYLES */
 
- .container-section{
+.container-section{
   max-width: 430px; 
   margin-top: 80px;
   justify-content: space-between;
-  
-
 } 
 
 
 
-@media(min-width:599px) and (max-width:1100px){
-.container{
-  align-items: center;
-  
-}
-.nav{
-  min-width: 400px;
-}
+@media(min-width:590px) and (max-width:866px){
+  .container{
+    align-items: center;
+  }
 
-.snap-logo{
-  padding-right: 0px;
-}
+  .nav{
+    min-width: 400px;
+    display: none;
+  }
+
+  .snap-logo{
+    padding-right: 0px;
+  }
 
 
   .container-header{
-    margin-left: 20px;
     justify-content: center;
     overflow:visible;
-    position: relative;
-    left: 35px;
-    
   }
 
   .paragraph h1{
-    font-size: 45px;
-    padding-top: 50px;
+    font-size: 8vw;
+    width: 300px;
   }
   .paragraph{
     width: 450px;
   }
   .paragraph p{
-    font-size: 18px;
+    font-size: 2.5vw;
+    width: 350px;
   }
 
   .image{
-    max-width: 390px;
-    width: 50%;
-    height: 500px;
+    max-width: 350px;
+    min-width:200px ;
+    width: 100%;
+    height: auto;
   }
 
   .container-section{
     justify-content: space-between;
-    width: 390px;
-     margin-left:0px;
+    max-width: 390px;
   }
 }
 
 
 
-@media  (max-width:500px){
+@media  (max-width:589px){
 
 /* BASIC STYLES  */
 
@@ -242,7 +232,8 @@ a{
     height: 1000px;
     margin: 30px 5px;
     padding: 0px;
-}
+  }
+
   h1{
     padding-top: 60px;
     padding-left: 7px;
@@ -265,12 +256,13 @@ a{
     justify-content: space-between;
     min-width: 381px;
     margin: 0px 15px;
- }
+  }
   
 
   .nav, .registration, .image{
     display: none;
   }
+
   .menu, .mobile, .container-header, .snap-logo{
     display: flex;
   }
@@ -280,8 +272,10 @@ a{
   #dropdown-content, .close-menu{
     display: block;
   }
+
   .menu{
     position: relative;
+    right:20px;
   }
 
   .side-nav{
@@ -299,12 +293,14 @@ a{
     cursor: pointer;
     box-shadow:  1px 2px 20px 2px #888;
   }
+
   .close-menu{
     display: block;
     margin-bottom: 70px;
-    margin-right: 20px;
+    margin-right: 10px;
     text-align: right;
   }
+
   #dropdown-content a{
     line-height: 60px;
   }
@@ -316,8 +312,8 @@ a{
     text-align: center;
     font-size: 17px;
     margin-top: 20px;
-   
   }
+
   .spanRegister{
     border: 2px solid #8c8b8b;
     margin-top: 18px;
@@ -332,7 +328,6 @@ a{
 
   .container-header{
     flex-direction: column;
-
     text-align: center;
     margin:60px 20px;
    }
@@ -342,19 +337,20 @@ a{
     min-width: 250px ;
     width: 100%;
     height: auto;
-    align-items: center;
-    
+    align-items: center; 
   }
+
   .paragraph p {
     font-size: 18px;
   }
+
  .paragraph{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    text-align: center;
- }
+  }
 
 /* SECTION STYLES MOBILE */
 
@@ -364,7 +360,6 @@ a{
     width: 625px;
     margin: 0px;
     margin-top: -25px;
-
     padding: 90px 10px;
   }
 }
